@@ -1,0 +1,22 @@
+{
+  "defaultSeverity": "error",
+  "extends": [
+    "tslint:recommended",
+    "tslint-config-prettier"
+  ],
+  "linterOptions": {
+    "exclude": [
+      "test/**/*.ts",
+      "test/*"
+    ]
+  },
+  "jsRules": {},
+  "rules": {
+    "object-literal-sort-keys": false,
+    "interface-name": false,
+    "no-namespace": false,
+    "interface-over-type-literal": false
+  },
+  "rulesDirectory": [],
+  "autoFixOnSave": true
+}

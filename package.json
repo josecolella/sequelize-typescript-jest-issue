@@ -1,0 +1,98 @@
+{
+  "name": "express-inversify-starter-template",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "NODE_ENV=production webpack",
+    "watch": "NODE_ENV=development webpack --watch",
+    "start:dev": "NODE_ENV=development nodemon ./dist/server.bundle.js",
+    "lint": "tslint --project tsconfig.json -c tslint.json",
+    "start:prod": "NODE_ENV=production node ./dist/server.bundle.js",
+    "test": "NODE_ENV=test jest --no-cache --detectOpenHandles",
+    "git-cz": "npx git-cz"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/josecolella/express-inversify-starter-template.git"
+  },
+  "keywords": [
+    "express",
+    "inversify",
+    "template",
+    "start-template"
+  ],
+  "author": "Jose Colella",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/josecolella/express-inversify-starter-template/issues"
+  },
+  "homepage": "https://github.com/josecolella/express-inversify-starter-template#readme",
+  "config": {
+    "commitizen": {
+      "path": "cz-conventional-changelog"
+    }
+  },
+  "prettier": {
+    "trailingComma": "none",
+    "arrowParens": "always",
+    "parser": "typescript",
+    "singleQuote": true,
+    "printWidth": 120
+  },
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "connect-redis": "^3.4.0",
+    "cookie-parser": "^1.4.3",
+    "dotenv": "^6.2.0",
+    "express": "^4.16.4",
+    "helmet": "^3.15.0",
+    "http-status-codes": "^1.3.0",
+    "inversify": "^5.0.1",
+    "inversify-express-utils": "^6.3.2",
+    "morgan": "^1.9.1",
+    "reflect-metadata": "^0.1.13",
+    "request": "^2.88.0",
+    "sequelize": "^4.42.0",
+    "sequelize-typescript": "^0.6.7",
+    "source-map-support": "^0.5.10",
+    "winston": "^3.1.0"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^7.3.2",
+    "@commitlint/config-conventional": "^7.3.1",
+    "@types/clean-webpack-plugin": "^0.1.2",
+    "@types/connect-redis": "0.0.8",
+    "@types/cookie-parser": "^1.4.1",
+    "@types/dotenv": "^6.1.0",
+    "@types/helmet": "0.0.42",
+    "@types/jest": "^23.3.13",
+    "@types/morgan": "^1.7.35",
+    "@types/node": "^10.12.18",
+    "@types/source-map-support": "^0.4.1",
+    "@types/terser-webpack-plugin": "^1.2.0",
+    "@types/webpack": "^4.4.23",
+    "@types/webpack-node-externals": "^1.6.3",
+    "@types/winston": "^2.4.4",
+    "clean-webpack-plugin": "^1.0.0",
+    "commitizen": "^3.0.5",
+    "cz-conventional-changelog": "^2.1.0",
+    "jest": "^23.6.0",
+    "prettier": "^1.15.3",
+    "shebang-loader": "0.0.1",
+    "terser-webpack-plugin": "^1.2.1",
+    "ts-jest": "^23.10.5",
+    "ts-loader": "^5.3.3",
+    "ts-node": "^7.0.1",
+    "tslint": "^5.12.1",
+    "tslint-config-prettier": "^1.17.0",
+    "tslint-loader": "^3.5.4",
+    "typescript": "^3.2.4",
+    "webpack": "^4.28.4",
+    "webpack-cli": "^3.2.1",
+    "webpack-node-externals": "^1.7.2"
+  },
+  "optionalDependencies": {
+    "fsevents": "*"
+  }
+}

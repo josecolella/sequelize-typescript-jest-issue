@@ -1,0 +1,22 @@
+{
+  "include": ["src/"],
+  "exclude": ["node_modules", "!node_modules/@types"],
+  "compileOnSave": true,
+  "compilerOptions": {
+    "target": "es2018",
+    "module": "commonjs",
+    "sourceMap": true,
+    "outDir": "./dist/",
+    "strict": true,
+    "noImplicitAny": true,
+    "alwaysStrict": true,
+    "noUnusedLocals": true,
+    "moduleResolution": "node",
+    "esModuleInterop": true,
+    "preserveConstEnums": true,
+    "resolveJsonModule": true,
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    "types": ["reflect-metadata", "jest"]
+  }
+}
